@@ -2,7 +2,7 @@
   <div class="game-field-container">
     <div class="game-field">
       <h1 v-show="gameField.length > 0">Round: {{ gameLog.length }}/20</h1>
-      <div class="row" v-for="(row, y) in gameField" :key="y">
+      <div class="game-field__row" v-for="(row, y) in gameField" :key="y">
         <letter
           v-for="(letter, x) in row"
           :key="`${y}${x}`"
@@ -38,12 +38,11 @@ export default {
     .game-field {
       display: flex;
       flex-direction: column;
-
       background: var(--background2);
       border-radius: 20px;
       padding: 20px;
 
-      .row {
+      &__row {
         display: flex;
         flex-direction: row;
       }

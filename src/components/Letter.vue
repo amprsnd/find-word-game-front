@@ -58,7 +58,5 @@ export default {
     &_vertical-last { border-radius: 0 0 50% 50%; }
     &_horizontal-first { border-radius: 50% 0 0 50%; }
     &_horizontal-last { border-radius: 0 50% 50% 0; }
-    // overlaping fix
-    &_verticalhorizontal-first { border-radius: 50% 0 0 0; }
   }
 </style>

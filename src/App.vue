@@ -47,9 +47,7 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-
     min-height: 100vh;
-
     background: var(--background1);
   }
 </style>
